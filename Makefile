@@ -42,6 +42,7 @@ $(CLIENT_OBJ_PATH)%.o: $(CLIENT_SRC_PATH)%.c
 	@$(CC) $(CFLAGS) -o $@ -c $< $(INC) && \
 		printf " -->> \033[32mOk\033[0m: %s                       \r" "$@" || \
 		printf " -->> \033[31mKo\033[0m: %s                       \r" "$@";
+
 $(SERVER): $(SERVER_OBJ)
 	@$(CC) $(LDFLAGS) $(SERVER_OBJ) $(LIB) -o $@ && \
 		printf " -->> \033[32mCompilation Success: %s\033[0m             \n" "$@"|| \
