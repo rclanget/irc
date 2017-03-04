@@ -1,1 +1,1 @@
-Tiny IRC client-server
+Tiny IRC client and server
