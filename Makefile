@@ -6,7 +6,16 @@ CFLAGS		=	-Werror -Wall -Wextra
 
 # CLIENT
 CLIENT_SRC_PATH	=	./srcs/client/
-CLIENT_SRC_NAME	=	main.c
+CLIENT_SRC_NAME	=	main.c \
+					ft_create_socket.c \
+					ft_server_connection.c \
+					ft_get_server_adress.c \
+					util.c \
+					ft_loop.c \
+					ft_get_stdin.c \
+					ft_handle_server_msg.c \
+					ft_save_request.c \
+					ft_prepares_request.c
 CLIENT_SRC			=	$(addprefix $(CLIENT_SRC_PATH),$(CLIENT_SRC_NAME))
 
 CLIENT_OBJ_PATH	=	./obj/client/
